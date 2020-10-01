@@ -80,7 +80,7 @@
         hr {
             top: 100px;
         }
-        header {
+        > header {
             max-height: initial;
             background-image: url('../images/ferrari-vermelha.webp');
         }
@@ -89,7 +89,7 @@
 
 @media (min-width: 1920px) {
     #home {
-        header {
+        > header {
             max-height: initial;
             background-image: url('../images/ferrari-vermelha@2x.webp');
         }

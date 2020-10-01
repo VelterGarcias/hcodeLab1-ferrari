@@ -4,7 +4,7 @@
     height: 60px;
     background-color: var(--gray-5);
     position: relative;
-    z-index: 3;
+    z-index: 5;
     .italy {
         width: 100%;
         display: block;
@@ -26,7 +26,7 @@
         position: fixed;
         right: -300px;
         top: 0;
-        z-index: 4;
+        z-index: 6;
         flex-direction: column;
         justify-content: space-between;
         &.logged {
@@ -98,10 +98,12 @@
             flex-direction: column;
             ul {
                 margin: 0;
-                margin-top: 249px;
+                margin-top: 169px;
                 padding: 0;
                 width: 100%;
                 flex-direction: column;
+                max-height: calc(100vh - 250px);
+                overflow-y: auto;
                 li {
                     padding: 14px 0;
                     list-style: none;
@@ -135,7 +137,7 @@
         transition: all 1s ease-in-out;
         right: calc(50vw - 36px);
         top: 15px;
-        z-index: 5;
+        z-index: 7;
         width: 72px;
     }
 }
@@ -150,7 +152,7 @@
             width: 100vw;
             height: 100vh;
             background-color: var(--dark-1);
-            z-index: 4;
+            z-index: 5;
         }
         .menu {
             right: 0px;
