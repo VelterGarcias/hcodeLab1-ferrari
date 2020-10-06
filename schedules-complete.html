@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
@@ -24,30 +25,34 @@
     <meta name="theme-color" content="#E1DEDD">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
 </head>
+
 <body class="">
-    <header id="header" >
+    <header id="header">
 
         <div class="overlay" data-close="menu"></div>
         <a href="index.html#home"><img src="assets/images/ferrari-logo.svg" class="logo" alt="Logo" /></a>
         <button type="button" id="btn-open" alt="Abrir Menu" aria-label="Abrir Menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                <path d="M0,0H32V32H0Z" fill="none"/>
-                <path d="M3,18H29V16H3Zm0-5H29V11H3ZM3,6V8H29V6Z" transform="translate(0 4)"/>
+                <path d="M0,0H32V32H0Z" fill="none" />
+                <path d="M3,18H29V16H3Zm0-5H29V11H3ZM3,6V8H29V6Z" transform="translate(0 4)" />
             </svg>
         </button>
         <div class="menu">
             <nav>
                 <button type="button" id="btn-close" data-close="menu" alt="Fechar Menu" aria-label="fechar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"/>
-                        <path d="M0,0H24V24H0Z" fill="none"/>
+                        <path
+                            d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" />
+                        <path d="M0,0H24V24H0Z" fill="none" />
                     </svg>
                 </button>
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#service">Revisão</a></li>
                     <li><a href="index.html#contact">Contato</a></li>
-                    <li class="divider"><hr/></li>
+                    <li class="divider">
+                        <hr />
+                    </li>
                     <li class="hide-guest"><a href="schedules.html">Agendamentos</a></li>
                     <li class="hide-guest"><a href="profile.html">Editar Dados</a></li>
                     <li class="hide-guest"><a href="change-photo.html">Mudar Foto</a></li>
@@ -67,7 +72,11 @@
                         </a>
                     </div>
                     <button type="button" alt="botão svg" aria-label="botao">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,0H24V24H0Z" fill="none"/><path d="M10.09,15.59,11.5,17l5-5-5-5L10.09,8.41,12.67,11H3v2h9.67ZM19,3H5A2,2,0,0,0,3,5V9H5V5H19V19H5V15H3v4a2,2,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Z" fill="#333"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="none" />
+                            <path
+                                d="M10.09,15.59,11.5,17l5-5-5-5L10.09,8.41,12.67,11H3v2h9.67ZM19,3H5A2,2,0,0,0,3,5V9H5V5H19V19H5V15H3v4a2,2,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Z"
+                                fill="#333" /></svg>
                     </button>
                 </div>
                 <a href="auth.html" class="btn-register">
@@ -80,68 +89,71 @@
 
     </header>
 
-    <section class="page" id="change-password">
-
+    <section id="schedules-complete" class="page green">
         <header>
-            <h1>Alterar Senha</h1>
+            <h1>Resumo do Pedido<small>Confira os detalhes do pedido</small></h1>
         </header>
 
         <main>
-
             <header class="page-title">
-                <h2>Informe a sua Senha</h2>
+                <h2>Obrigado!</h2>
                 <hr />
+                
             </header>
 
-        
+            <p>10 de Julho de 2020</p>
+            <p>Número do Pedido: 000123<small>Cartão de Crédito final 0604</small></p>
 
-        <form >
-
-            <div class="field">
-                <input type="password" name="password" id="password" />
-                <label for="password">Senha Atual</label>
-
-            </div>
-
-            <header class="page-title">
-                <h2>Crie uma Nova Senha</h2>
-                <hr />
-            </header>
-
-            <div class="field">
-                <input type="password" name="password-new" id="password-new" />
-                <label for="password-new">Nova Senha</label>
-
-            </div>
-
-
-            <div class="field">
-                <input type="password" name="password-confirm" id="password-confirm" />
-                <label for="password-confirm">Confirme a Nova Senha</label>
-
-            </div>
-
-          
-
-            <div class="toast success">
-                Dados salvos com sucesso!
-                <button type="button" class="close">
-                    <span>&times;</span>
-                </button>
-            </div>
-
+            
             <footer class="fixed">
-
-                <button type="submit">Salvar</button>
-    
+                <a href="schedules.html">Agendamentos</a>
             </footer>
-        </form>
 
-    </main>
+
+        </main>
+
+        <aside>
+
+            <header>Resumo</header>
+
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Alinhamento</td>
+                            <td class="price">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Alinhamento</td>
+                            <td class="price">R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Alinhamento</td>
+                            <td class="price">R$ 0,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <footer>
+
+                <button type="button" id="btn-summary-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="64.317" height="64.317" viewBox="0 0 64.317 64.317"><path d="M0,0H64.317V64.317H0Z" fill="none"/><path d="M9.779,27.858l12.3-12.274,12.3,12.274,3.779-3.779L22.079,8,6,24.079Z" transform="translate(10.079 13.439)"/></svg></button>
+
+                <div>
+                    <span>Total</span>
+                    <span class="total">R$ 0,00</span>
+                </div>
+            </footer>
+
+
+
+        </aside>
 
     </section>
 
-    
+
+    <script type="text/javascript" src="/assets/js/up.js"></script>
     <script type="text/javascript" src="/assets/js/menu.js"></script>
 </body>
+
 </html>
