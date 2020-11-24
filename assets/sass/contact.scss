@@ -23,9 +23,8 @@
         margin-top: var(--space);
     }
     .contacts {
-        margin: 0;
-        padding: var(--space);
-        margin-top: var(--space);
+        margin: var(--space) 0 0 0;
+        padding: 1em;
         flex-direction: column;
         li {
             border: var(--gray-3) 1px solid;
@@ -33,11 +32,11 @@
             flex-direction: column;
             justify-content: center;
             padding: var(--space);
-            margin-bottom: calc(var(--space) * 3);
+            margin-bottom: 4em;
             text-align: center;
             color: var(--gray-1);
             img {
-                min-width: 100px;
+                max-width: 100px;
                 background-color: var(--white);
                 margin: 0 auto;
                 margin-top: -60px;
