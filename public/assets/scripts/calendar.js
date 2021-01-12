@@ -20,14 +20,16 @@ document.querySelectorAll(".calendar").forEach((calendar) => {
   const btnPrev = calendar.querySelector(".btn-prev");
   const btnNext = calendar.querySelector(".btn-next");
 
-//   btnToday.addEventListener("click", (e) => {});
-//   btnPrev.addEventListener("click", (e) => {});
-//   btnNext.addEventListener("click", (e) => {});
+  btnToday.addEventListener("click", (e) => {});
+  btnPrev.addEventListener("click", (e) => {});
+  btnNext.addEventListener("click", (e) => {});
 
   const render = () => {
     title.innerHTML = format(startMonth, "MMMM yyyy", {
         locale: ptBR
     });
+
+    days.innerHTML = ""
   };
 
   render();
