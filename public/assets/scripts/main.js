@@ -5,9 +5,9 @@ const btnFooter = document.querySelector('#footer button');
 
 const menuLinks = document.querySelectorAll('.menu a')
 
-btnFooter.addEventListener('click', e=> {
-    window.scrollTo(0,0);
-})
+// btnFooter.addEventListener('click', e=> {
+//     window.scrollTo(0,0);
+// })
 
 if(btOpen) {
     btOpen.addEventListener('click', e=> {

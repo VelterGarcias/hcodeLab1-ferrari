@@ -23,7 +23,6 @@
     <meta name="msapplication-TileColor" content="#E1DEDD">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#E1DEDD">
-    <link rel="preload" href="assets/css/main.css" as="style" />
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
 </head>
 
@@ -90,152 +89,32 @@
 
     </header>
 
-    <section id="home">
+    <main id="error">
 
-        <header>
-            <ul>
-                <li>#3,9 L V8</li>
-                <li>#720 HP</li>
-                <li>#V12</li>
-            </ul>
-            <h1>SF90 Stradale</h1>
-            <a href="#home">Detalhes</a>
-        </header>
+        <div class="columns">
 
-        <section class="gallery">
-            <figure>
-                <picture>
-                    <source srcset="assets/images/ferrari-amarela.webp" type="image/webp" />
-                    <img src="assets/images/ferrari-amarela.png" alt="Ferrari Amarela" />
-                </picture>
-                <figcaption>
-                    <h2>Esportivas</h2>
-                    <p>Ferrari F1000</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="assets/images/ferrari-interior.webp" type="image/webp" />
-                    <img src="assets/images/ferrari-interior.png" alt="Ferrari Interior" />
-                </picture>
-                <figcaption>
-                    <h2>Esportivas</h2>
-                    <p>Ferrari F1000</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="assets/images/ferrari-azul.webp" type="image/webp" />
-                    <img src="assets/images/ferrari-azul.png" alt="Ferrari Azul" />
-                </picture>
-                <figcaption>
-                    <h2>Esportivas</h2>
-                    <p>Ferrari F1000</p>
-                </figcaption>
-            </figure>
+            <div class="column">
 
-        </section>
-
-    </section>
-
-    <section id="service">
-        <h2>Agende seu Serviço <small>Como Funciona?</small></h2>
-
-        <div>
-            <div class="icons">
-
-                <figure>
-                    <img src="assets/images/calendar.svg" alt="Escolha a Data e a Hora" />
-                    <figcaption>Escolha o Serviço</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/tools.svg" alt="Escolha o Serviço" />
-                    <figcaption>Escolha o Serviço</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/payments.svg" alt="Pague Online" />
-                    <figcaption>Pague Online</figcaption>
-                </figure>
+                <header>
+                    <h1>
+                        <span class="desktop"><b>Uno</b>&nbsp;problema ocorrido!</span>
+                        <span class="mobile">Problema ocorrido no <b>Mobile</b>!</span>
+                    </h1>
+                    
+                </header>
+                <p>Tente novamente mais tarde.</p>
 
             </div>
-
-            <a href="schedules-new.html" class="btn">Agendar Serviço</a>
+            <div class="column">
+                <picture>
+                    <source srcset="assets/images/uno.png"  media="(min-width: 992px)" />
+                    <source srcset="assets/images/mobi@2x.png" media="(min-width: 480px)" />
+                    <img src="assets/images/mobi.png" alt="Página não encotrada" />
+                </picture>
+            </div>
         </div>
 
-        <img src="assets/images/services.svg" alt="Serviços" />
-
-    </section>
-
-    <section id="contact">
-        <h2>Entre em contato</h2>
-        <section>
-            <form>
-
-                <header class="page-title">
-                    <h2>Formulário</h2>
-                    <hr />
-                </header>
-
-                <p>
-                    Envie o formulário abaixo para entrar em contato conosco.
-                </p>
-
-                <div class="alert danger">
-                    Preencha todos os campos
-                </div>
-
-                <div class="fields">
-                    <div class="field">
-                        <input type="text" name="name" id="name" />
-                        <label for="name">Nome Completo</label>
-                    </div>
-                    <div class="field">
-                        <input type="email" name="email" id="email" />
-                        <label for="email">E-mail</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <textarea name="message" id="message"></textarea>
-                    <label for="name">Mensagem</label>
-                </div>
-
-                <div class="actions">
-                    <button type="submit">Enviar</button>
-                </div>
-
-            </form>
-
-            <div id="map"></div>
-        </section>
-        <hr class="divider">
-
-        <ul class="contacts">
-            <li>
-                <img src="assets/images/icon-google-place.svg" alt="Icone">
-                <p class="title">OUR HEADQUARTERS</p>
-                <p>Modena, Itália</p>
-            </li>
-            <li>
-                <img src="assets/images/icon-phone.svg" alt="Icone">
-                <p class="title">SPEAK TO US</p>
-                <p>(123) 456 7890</p>
-            </li>
-            <li>
-                <img src="assets/images/icon-skype.svg" alt="Icone">
-                <p class="title">MAKE A VIDEO CALL</p>
-                <p>FerrariOnSkype</p>
-            </li>
-            <li>
-                <img src="assets/images/icon-twitter.svg" alt="Icone">
-                <p class="title">FOLLOW ON TWITTER</p>
-                <p>2.3M Followers</p>
-            </li>
-        </ul>
-
-    </section>
-
+    </main>
 
     <footer id="footer">
 
@@ -292,7 +171,7 @@
         <p>2020 © Hcode. All rights reserved.</p>
 
     </footer>
-    <script type="text/javascript" src="/assets/scripts/main.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
 </body>
 
 </html>
