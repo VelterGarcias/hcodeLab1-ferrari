@@ -32,7 +32,7 @@
         <section>
             <a href="index.html"><img src="assets/images/ferrari-logo.svg" alt="Logo Ferrari"></a>
 
-            <form >
+            <form id="auth-email">
 
                 <h1>Autenticação</h1>
 
@@ -51,14 +51,14 @@
 
             </form>
 
-            <form class="hide">
+            <form id="login" class="hide">
 
                 <h1>Fazer Login</h1>
 
                 <hr />
 
                 <div class="field">
-                    <input type="email" name="email" id="email-login" readonly value="joão@hcode.com.br"/>
+                    <input type="email" name="email" id="email-login" readonly/>
                     <label for="email-login">E-mail</label>
 
                 </div>
@@ -88,8 +88,8 @@
                 <hr />
 
                 <div class="field">
-                    <input type="email" name="email" id="email-login" readonly value="joão@hcode.com.br"/>
-                    <label for="email-login">E-mail</label>
+                    <input type="email" name="email" id="email-register" readonly value="joão@hcode.com.br"/>
+                    <label for="email-register">E-mail</label>
 
                 </div>
 
@@ -170,6 +170,7 @@
         </section>
 
     </main>
+    <script src="assets/scripts/auth.js"></script>
 </body>
 
 </html>
