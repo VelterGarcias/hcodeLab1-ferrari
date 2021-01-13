@@ -269,6 +269,16 @@ form button:hover {
 form button:active {
   background-color: var(--black-75);
 }
+form button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+form button:disabled:hover, form button:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   form button {
     min-width: 150px;
@@ -404,6 +414,16 @@ header.page-title hr {
 .page aside footer button:active {
   background-color: var(--black-75);
 }
+.page aside footer button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+.page aside footer button:disabled:hover, .page aside footer button:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   .page aside footer button {
     min-width: 150px;
@@ -497,6 +517,16 @@ header.page-title hr {
 .page footer.fixed button:active, .page footer.fixed a:active {
   background-color: var(--black-75);
 }
+.page footer.fixed button:disabled, .page footer.fixed a:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+.page footer.fixed button:disabled:hover, .page footer.fixed button:disabled:active, .page footer.fixed a:disabled:hover, .page footer.fixed a:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   .page footer.fixed button, .page footer.fixed a {
     min-width: 150px;
@@ -533,6 +563,16 @@ header.page-title hr {
 }
 .page footer.fixed button[type=submit]:active, .page footer.fixed a.black:active {
   background-color: var(--black-75);
+}
+.page footer.fixed button[type=submit]:disabled, .page footer.fixed a.black:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+.page footer.fixed button[type=submit]:disabled:hover, .page footer.fixed button[type=submit]:disabled:active, .page footer.fixed a.black:disabled:hover, .page footer.fixed a.black:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   .page footer.fixed button[type=submit], .page footer.fixed a.black {
@@ -574,6 +614,16 @@ header.page-title hr {
 .page.blue footer.fixed button[type=submit]:active {
   background-color: var(--black-75);
 }
+.page.blue footer.fixed button[type=submit]:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+.page.blue footer.fixed button[type=submit]:disabled:hover, .page.blue footer.fixed button[type=submit]:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   .page.blue footer.fixed button[type=submit] {
     min-width: 150px;
@@ -613,6 +663,16 @@ header.page-title hr {
 }
 .page.green footer.fixed button[type=submit]:active {
   background-color: var(--black-75);
+}
+.page.green footer.fixed button[type=submit]:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+.page.green footer.fixed button[type=submit]:disabled:hover, .page.green footer.fixed button[type=submit]:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   .page.green footer.fixed button[type=submit] {
@@ -721,6 +781,16 @@ header.page-title hr {
 }
 .calendar .month button:active {
   background-color: var(--black-75);
+}
+.calendar .month button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+.calendar .month button:disabled:hover, .calendar .month button:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   .calendar .month button {
@@ -892,6 +962,16 @@ header.page-title hr {
 }
 #header .menu .btn-register:active {
   background-color: var(--black-75);
+}
+#header .menu .btn-register:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#header .menu .btn-register:disabled:hover, #header .menu .btn-register:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   #header .menu .btn-register {
@@ -1252,6 +1332,16 @@ header.page-title hr {
 #home > header a:active {
   background-color: var(--black-75);
 }
+#home > header a:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#home > header a:disabled:hover, #home > header a:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   #home > header a {
     min-width: 150px;
@@ -1385,6 +1475,16 @@ header.page-title hr {
 }
 #service > div a:active {
   background-color: var(--black-75);
+}
+#service > div a:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#service > div a:disabled:hover, #service > div a:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   #service > div a {
@@ -1716,6 +1816,16 @@ header.page-title hr {
 #schedules main > div ul li button:active {
   background-color: var(--black-75);
 }
+#schedules main > div ul li button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#schedules main > div ul li button:disabled:hover, #schedules main > div ul li button:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   #schedules main > div ul li button {
     min-width: 150px;
@@ -1872,6 +1982,16 @@ header.page-title hr {
 #time-options .options label span:active {
   background-color: var(--black-75);
 }
+#time-options .options label span:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#time-options .options label span:disabled:hover, #time-options .options label span:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
 @media (min-width: 768px) {
   #time-options .options label span {
     min-width: 150px;
@@ -1905,6 +2025,16 @@ header.page-title hr {
 }
 #time-options .options label input:checked + span:active {
   background-color: var(--black-75);
+}
+#time-options .options label input:checked + span:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#time-options .options label input:checked + span:disabled:hover, #time-options .options label input:checked + span:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   #time-options .options label input:checked + span {
@@ -2120,6 +2250,16 @@ header.page-title hr {
 }
 #schedules-complete main footer.fixed a:active {
   background-color: var(--black-75);
+}
+#schedules-complete main footer.fixed a:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+  background-color: var(--gray-3);
+  color: var(--dark-0);
+}
+#schedules-complete main footer.fixed a:disabled:hover, #schedules-complete main footer.fixed a:disabled:active {
+  background-color: var(--gray-3);
+  color: var(--dark-0);
 }
 @media (min-width: 768px) {
   #schedules-complete main footer.fixed a {
