@@ -76,3 +76,19 @@ export function getFormValues(form) {
 
     return values
 }
+
+export function hideAlertError (form) {
+    const alertDanger = form.querySelector(".alert.danger")
+
+    alertDanger.style.display = "none";
+}
+
+export function showAlertError (form) {
+
+    return error => {
+        const alertDanger = form.querySelector(".alert.danger")
+        alertDanger.innerHTML = error.message
+        alertDanger.style.display = "block";
+    }
+    
+}

@@ -4,6 +4,7 @@
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: var(--border-radius);
+    display: none;
     &.danger {
         color: var(--danger-color);
         background-color: var(--danger);

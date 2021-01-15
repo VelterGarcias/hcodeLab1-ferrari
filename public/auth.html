@@ -58,7 +58,7 @@
                 <hr />
 
                 <div class="field">
-                    <input type="email" name="email" id="email-login" readonly/>
+                    <input type="email" name="email" id="email-login"/>
                     <label for="email-login">E-mail</label>
 
                 </div>
@@ -69,11 +69,14 @@
 
                 </div>
 
+                <div class="alert danger"></div>
+
                 <div class="actions">
                     <div>
 
                         <a href="auth.html#forget" class="link">Esqueceu sua senha?</a>
-                        <a href="auth.html" class="link">Este não é o seu email?</a>
+                        <a href="auth.html#register" class="link">Criar uma Conta</a>
+                        <!-- <a href="auth.html" class="link">Este não é o seu email?</a> -->
 
                     </div>
                     <button type="submit">Próxima</button>
@@ -88,7 +91,7 @@
                 <hr />
 
                 <div class="field">
-                    <input type="email" name="email" id="email-register" readonly value="joão@hcode.com.br"/>
+                    <input type="email" name="email" id="email-register"/>
                     <label for="email-register">E-mail</label>
 
                 </div>
@@ -116,6 +119,8 @@
                     <label for="password-confirm">Confirme a senha</label>
 
                 </div>
+
+                <div class="alert danger"></div>
 
                 <div class="actions">
                     <a href="auth.html#login" class="link">Já tem uma Conta?</a>
