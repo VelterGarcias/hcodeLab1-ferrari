@@ -106,3 +106,14 @@ export function onSnapshotError( err ) {
     const search = encodeURIComponent(window.location.search)
     window.location.href = `/auth.html?url=${pathName}${search}`
 }
+
+export function getQueryStringFromJSON(json) {
+
+    const params = []
+
+    Object.keys(json).forEach(key => {
+        params.push(`${key}=${json[key]}`)
+    })
+
+    return params.join('&')
+}

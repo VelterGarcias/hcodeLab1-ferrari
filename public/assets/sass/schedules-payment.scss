@@ -1,5 +1,26 @@
 #schedules-payment {
     position: relative;
+    &.keyboard-open {
+        margin-bottom: 0;
+        height: calc(100vh - 60px);
+        > main {
+            form {
+                max-width: 100%;
+            }
+        }
+        footer {
+            position: static;
+            width: 100vw;
+            margin-left: -20px;
+        }
+    }
+    .name {
+        text-transform: uppercase;
+        &.tspan {
+            text-transform: uppercase;
+        }
+
+    }
     > header {
         height: 260px;
         min-height: 260px;
@@ -63,6 +84,20 @@
 @media (min-width: 1200px) {
     #schedules-payment {
         position: static;
+        &.keyboard-open {
+            margin-bottom: 0;
+            height: calc(100vh - 60px);
+            > main {
+                form {
+                    max-width: 1200px;
+                }
+            }
+            footer {
+                position: fixed;
+                width: 100%;
+                margin-left: initial;
+            }
+        }
         > header {
             height: 160px;
             min-height: 160px;

@@ -2123,6 +2123,24 @@ header.page-title hr {
 #schedules-payment {
   position: relative;
 }
+#schedules-payment.keyboard-open {
+  margin-bottom: 0;
+  height: calc(100vh - 60px);
+}
+#schedules-payment.keyboard-open > main form {
+  max-width: 100%;
+}
+#schedules-payment.keyboard-open footer {
+  position: static;
+  width: 100vw;
+  margin-left: -20px;
+}
+#schedules-payment .name {
+  text-transform: uppercase;
+}
+#schedules-payment .name.tspan {
+  text-transform: uppercase;
+}
 #schedules-payment > header {
   height: 260px;
   min-height: 260px;
@@ -2182,6 +2200,18 @@ header.page-title hr {
 @media (min-width: 1200px) {
   #schedules-payment {
     position: static;
+  }
+  #schedules-payment.keyboard-open {
+    margin-bottom: 0;
+    height: calc(100vh - 60px);
+  }
+  #schedules-payment.keyboard-open > main form {
+    max-width: 1200px;
+  }
+  #schedules-payment.keyboard-open footer {
+    position: fixed;
+    width: 100%;
+    margin-left: initial;
   }
   #schedules-payment > header {
     height: 160px;
