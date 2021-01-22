@@ -1,7 +1,7 @@
 import { format, parse } from "date-fns";
 import {ptBR} from 'date-fns/locale';
 import firebase from './firebase-app';
-import { appendTemplate, getFormValues, getQueryString, setFormValues } from "./utils";
+import { appendTemplate, getFormValues, getQueryString, onSnapshotError, setFormValues } from "./utils";
 
 // const data = [
 //   {
@@ -37,7 +37,7 @@ import { appendTemplate, getFormValues, getQueryString, setFormValues } from "./
 
 
 const renderTimeOptions = (context, timeOptions) => {
-  console.log("renderTimeOptions");
+//   console.log("renderTimeOptions");
     const targetElement = context.querySelector('.options')
     targetElement.innerHTML = ""
 
@@ -62,7 +62,7 @@ const validateSubmitForm = context => {
     }
 
     window.addEventListener('load', e => checkValue())
-    console.log("addEventListener radios")
+    // console.log("addEventListener radios")
     context.querySelectorAll('[name=option]').forEach( input => {
         input.addEventListener('change', (e) => {
             checkValue()
@@ -81,20 +81,25 @@ const validateSubmitForm = context => {
 
 document.querySelectorAll("#time-options").forEach((page) => {
 
+    const auth = firebase.auth();
     const db = firebase.firestore();
 
-    db.collection('time-options').onSnapshot(snapshot => {
+    auth.onAuthStateChanged( user => {
+        db.collection('time-options').onSnapshot(snapshot => {
 
-      const timeOptions = []
-      snapshot.forEach(item => {
-        timeOptions.push(item.data());
-        console.log(item.data());
-      })
-
-      renderTimeOptions(page, timeOptions)
-
-      validateSubmitForm(page)
+            const timeOptions = []
+            snapshot.forEach(item => {
+              timeOptions.push(item.data());
+              // console.log(item.data());
+            })
+      
+            renderTimeOptions(page, timeOptions)
+      
+            validateSubmitForm(page)
+          }, onSnapshotError)
     })
+
+    
 
 
     const params = getQueryString()
@@ -102,10 +107,15 @@ document.querySelectorAll("#time-options").forEach((page) => {
     const form = page.querySelector('form')
     const scheduleAt = parse(params.schedule_at, "yyyy-MM-dd", new Date())
 
+
+    if (scheduleAt.toString() === "Invalid Date") {
+        window.location.href = '/'
+    }
+
     // page.querySelector('[name=schedule_at]').value = params.schedule_at
     setFormValues(form, params)
 
-    console.log(getFormValues(form));
+    // console.log(getFormValues(form));
 
     title.innerHTML = format(scheduleAt, "EEEE, d 'de' MMMM 'de' yyyy ", { locale: ptBR})
 });
