@@ -125,7 +125,12 @@ if (authPage) {
       const values = getQueryString()
 
       if (values.url) {
-        window.location.href = `http://localhost:8080${values.url}`
+        if(location.hostname === "localhost") {
+          window.location.href = `http://localhost:8080${values.url}`
+        } else {
+          window.location.href = `https://ferrari-js.web.app${values.url}`
+        }
+        
       } else {
         window.location.href = '/'
       }
