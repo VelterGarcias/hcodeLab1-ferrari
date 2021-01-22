@@ -212,7 +212,10 @@ if (authPage) {
 
     auth.verifyPasswordResetCode(oobCode)
     .then(() => auth.confirmPasswordReset(oobCode, password))
-    .then(() => showAuthForm("login"))
+    .then(() => {
+      hideAuthForms();
+      showAuthForm("login");
+    })
     .catch(showAlertError(formReset))
     .finally(() => {
       btnSubmit.disabled = false
