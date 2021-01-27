@@ -135,4 +135,13 @@ document.querySelectorAll('#schedules-services').forEach( page => {
         //     window.location.href = `/schedules-payment.html?${getQueryStringFromJSON(values)}`
 
         // })
+        form.addEventListener('submit', e => {
+
+            e.preventDefault()
+    
+            const values = getFormValues(form)
+    
+            window.location.href = `/schedules-payment.html?${getQueryStringFromJSON(values)}`
+    
+        })
 })

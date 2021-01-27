@@ -24,6 +24,7 @@ if (menu) {
             const userElement = menu.querySelector('.footer > div > div')
             userElement.querySelector('strong').innerHTML = user.displayName
             userElement.querySelector('small').innerHTML = user.email
+            userElement.closest('.footer').querySelector('img').src = user.photoURL || 'https://i.pravatar.cc/50'
             menu.classList.add('logged')
         } else {
             menu.classList.remove('logged')

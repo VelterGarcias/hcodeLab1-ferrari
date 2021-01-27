@@ -63,7 +63,7 @@ export function getFormValues(form) {
         
             case 'checkbox':
                 values[field.name] = []
-                form.querySelectorAll(`[name=${field.name}:checked]`).forEach(checkbox => {
+                form.querySelectorAll(`[name=${field.name}]:checked`).forEach(checkbox => {
                     values[field.name].push(checkbox.value)
                 })
                 break;

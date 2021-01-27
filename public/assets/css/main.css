@@ -1752,6 +1752,11 @@ header.page-title hr {
   margin: var(--space) 0;
   min-width: 256px;
 }
+#change-photo form.cropping img {
+  height: auto;
+  border-radius: 0;
+  margin-top: 0;
+}
 
 @media (min-width: 1200px) {
   #change-photo form img {
